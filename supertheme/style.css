@@ -1,19 +1,27 @@
 /*
-Theme Name: supertheme
-Theme URI: http://www.paolobortolotti.com
-Author: Underscores.me
+Theme Name: pb_supertheme
+Theme URI: http://wordpress.org/themes/pb_supertheme
+Author: Underscores.me / paolobortolotti
 Author URI: http://www.paolobortolotti.com
-Description: Description
-Version: 1.0 del 27 dicembre 2016
+Description: This theme does not graphics.
+The structure evokes css and javascript bootstrap and everything you need to customize it to taste.
+The theme php calls to other folders to have a greater order in the development.
+The theme has a pretty permalink system.
+The theme suggests plugin that might be useful in the development.
+In addition there is a folder called snippet where you can find useful scripts.
+////
+Questo tema non ha grafica. 
+La struttura richiama css e javascript bootstrap e tutto il necessario per customizzarlo a piacere.
+Il tema ha richiami php in altre cartelle per avere un maggiore ordine nello sviluppo.
+Il tema Ha un sistema di pretty permalink.
+Il tema suggerisce plugin che potrebbero essere utili nello sviluppo.
+Inoltre c'è una cartella chiamata snippet dove si possono trovare script utili.
+Tema customizzato basato su Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Version: 1.0
 License: GNU General Public License v2 or later
-License URI: LICENSE
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: naked theme, bootstrap, portfolio js, custom post type, underscore, isotope, snippet
 Text Domain: supertheme
-Tags:
-
-
-Tema customizzato da Paolo Bortolotti
-è basato su Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
 */
 
 
@@ -45,4 +53,113 @@ html {
 	font-family: sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust:     100%;
+}
+
+/*--------------------------------------------------------------
+# WordPress Core
+--------------------------------------------------------------*/
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+        white-space: nowrap;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
 }
