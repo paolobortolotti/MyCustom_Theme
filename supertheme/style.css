@@ -1,0 +1,48 @@
+/*
+Theme Name: supertheme
+Theme URI: http://www.paolobortolotti.com
+Author: Underscores.me
+Author URI: http://www.paolobortolotti.com
+Description: Description
+Version: 1.0 del 27 dicembre 2016
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: supertheme
+Tags:
+
+
+Tema customizzato da Paolo Bortolotti
+è basato su Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+*/
+
+
+/* 
+	
+Tricks:
+
+								remove spacing between middle columns 
+.row.no-gutter [class*='col-']:not(:first-child):not(:last-child) {
+  padding-right:0;
+  padding-left:0;
+}
+								remove right padding from first column
+.row.no-gutter [class*='col-']:first-child {
+  padding-right:0;
+}
+								remove left padding from first column 
+.row.no-gutter [class*='col-']:last-child {
+  padding-left:0;
+}
+	
+*/
+
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+html {
+	font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust:     100%;
+}

@@ -1,0 +1,18 @@
+.standard{
+	background-image: url('../images/sample.jpg');
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 340px;	
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border:none!important;
+}
+
+.supertheme{
+	border: 0px!important;
+}
+.navbar-toggle {
+    border-radius: 0px!important;
+}

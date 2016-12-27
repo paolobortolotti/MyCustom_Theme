@@ -1,0 +1,107 @@
+/*-------------------------------
+# Portfolio
+---------------------------------*/
+.portfolio-item {
+    padding: 15px;
+    width: 33.333%;
+}
+.portfolio-item::before {
+    height: 100%;
+    top: 0;
+    transition: background 0.5s ease 0s;
+    z-index: 999;
+}
+.work-item a:after {
+	position: absolute;
+	display: block;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+	   -moz-transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+	     -o-transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+	        transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+}
+.work-item img {
+	height: auto;
+	width: 100%;	
+}
+
+.work-caption {
+	position: absolute;
+	left: 0;
+	top: 100%;
+	width: 100%;
+	opacity: 0;
+	overflow: hidden;
+	padding: 20px;
+	z-index: 3;
+	text-align: center;
+	-webkit-transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+	   -moz-transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+	     -o-transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+	        transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+}
+.work-title {
+	font-size: 14px;
+	color: #fff;
+	margin: 6px 0 6px;
+}
+.work-descr {
+	font-size: 11px;
+	color: rgba(255, 255, 255, 0.75);
+}
+/* White hover */
+
+.works-hover-w .work-title {
+	color: #111;
+}
+.works-hover-w .work-descr {
+	color: rgba(17, 17, 17, 0.75);
+}
+#filters a {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+ 
+    color: #555555;
+}
+#filters a:hover, #filters a.active,  #filters a{
+    background-color: #2A2925;
+    color: #fff!important;
+    padding: 10px;
+    text-transform: uppercase;
+}
+#filters {
+    margin-bottom: 35px;
+    margin-top: 38px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.bottom-filter a {
+    background-color: #999 !important;
+}
+.bottom-filter li:first-child {
+    display: none;
+}
+
+/* ------------------------------------------------------------------
+Works item hover
+------------------------------------------------------------------- */
+
+.work-item:hover a:after {
+	background: rgba(34, 34, 34, 0.75);
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.works-hover-w .work-item:hover a:after {
+	background: rgba(255, 255, 255, 0.8);
+}
+
+.work-item:hover .work-caption {
+	opacity: 1;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	   -moz-transform: translateY(-50%);
+	        transform: translateY(-50%);
+}
