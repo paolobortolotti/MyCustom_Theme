@@ -13,7 +13,7 @@ function supertheme_register_required_plugins() {
 			'name'         => 'ACF Pro', // The plugin name.
 			'slug'         => 'acf-pro', // The plugin slug (typically the folder name).
 			'required'     => false, // If false, the plugin is only 'recommended' instead of required.
-			'external_url' => 'https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9NjcwMjZ8dHlwZT1wZXJzb25hbHxkYXRlPTIwMTUtMTAtMjAgMTg6NTE6MjQ=', // If set, overrides default API URL and points to an external URL.
+			'external_url' => 'https://connect.advancedcustomfields.com/index.php', // If set, overrides default API URL and points to an external URL.
 		),
 
 		array(
