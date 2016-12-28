@@ -7,7 +7,7 @@
 ////////
 
 add_action( 'init', 'progetto_custom_init' );
-function portfolio_custom_init()
+function progetto_custom_init()
 {
   $labels = array(
     'name' => _x('Progetti', 'post type general name'),
@@ -39,8 +39,6 @@ function portfolio_custom_init()
 	register_post_type( 'progetto', $args );
 }
 
-
-add_action( 'init', 'portfolio_custom_init' );
 function my_taxonomies_product() {
 	$labels = array(
 		'name'              => _x( 'Categoria Progetto', 'taxonomy general name' ),
